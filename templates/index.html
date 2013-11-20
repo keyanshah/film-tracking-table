@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<title>Hello from Flask</title>
+
+<link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+	<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+
+	<!-- Table Header -->
+	<thead>
+		<tr>
+			<th>Week</th>
+			<th>Film</th>
+			<th>Film Play Date</th>
+			<th>Location</th>
+			<th>Warnings</th>
+			<th>Options</th>
+		</tr>
+	</thead>
+	<!-- Table Header -->
+	{% for row in table %}
+		<tr>
+			<td>{{ row.week }}</td>
+			<td>{{ row.film }}</td>
+			<td>{{ row.filmdate }}</td>
+			<td>{{ row.location }}</td>
+			<td>{{ row.warnings }}</td>
+		</tr>
+	{% endfor %}
+	<!-- Table Body -->
+	<tbody>
+
+	</tbody>
+	<!-- Table Body -->
+
+</table>
+	</div>
+</body>
+</html>
